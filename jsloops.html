@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Loops</title>
+</head>
+<body>
+    <p id="num"></p>
+    <script>
+        
+        // for loop
+        let i;
+        for(i=0; i<=10; i++)
+        {
+            console.log(i);
+            document.getElementById("num").innerHTML += i +"<br>";
+        }
+
+        // for/of loop
+        const cars = ["Bmw", "ferrari", "Mercedes","Audi","MG"];
+        for(let x of cars)
+        {
+            console.log(x);
+        }
+
+        // for/in loop
+        const cars1 = ["Bmw", "ferrari", "Mercedes","Audi","MG"];
+        for(let x in cars1)
+        {
+            console.log(x);
+        }
+
+        //create a program that runs from 0 to 50
+
+        let j;
+        for(j=0; j<=50; j++){
+            document.write(j + " ");
+        }
+
+       
+        //looping through a string
+
+        let language="javascript";
+        let txt = "";                 //empty variable
+        for(let x of language)
+        {
+            console.log(txt+=x);
+            
+        }
+        console.log(txt +" ");
+
+        
+        
+
+        // const fruits = ["Apple","Banana","Strawberry","Mango","Pineapple"];
+
+        // for(let x of fruits);
+        // {
+        //     console.log(fruits[3]);
+        // }
+        // let i;
+        // const array = [1,2,3,5,7,9,10,11,12,15,19,20,21,22,25,27,29,30];
+        // for(i=0;i<30;i++)
+        // {
+        //     console.log(array[0]);
+        // }
+        const person1 = {fname:"Akshay", lname:"Bendre", age:23}
+        for(x in person1)
+        {
+            console.log(person1[x]);     
+        }
+    </script>
+</body>
+</html>
