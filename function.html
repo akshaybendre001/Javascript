@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in javascript</title>
+</head>
+<body>
+    <script>
+
+        function hello()
+        {
+            return("Hello!");
+            
+        }
+        console.log(hello());                  //simplest function to print hello
+
+
+        function oneplusavg(x, y)
+        {
+            return(1+(x+y)/2);
+        }
+
+        let a = 2;
+        let b = 4; 
+        let c = 6;
+
+        console.log("Average of a and b is:", oneplusavg(a, b));
+        console.log("Average of b and c is:", oneplusavg(b, c));              // use a comma i.e syntax
+        console.log("Average of a and c is:", oneplusavg(a, c));              //oneplusavg(a, c); is function invoked
+
+        // console.log("Average of a and b is:" (1+(a + b)/2));
+        // console.log("Average of b and c is:"(1+(b + c)/2));      //mistaken here
+        // console.log("Average of a and c is:" (1 +(a + c)/2));
+
+        function demo()
+        {
+            console.log("Will it print without return type in the function");
+        }
+
+        demo();       // demo invoked
+        console.log("Yes it got printed!");
+
+
+    </script>
+</body>
+</html>
