@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Pattern</title>
+</head>
+<body>
+    <p id ="demo"></p>
+    <p id ="demo1"></p>
+    <p id ="demo2"></p>
+    <p id ="demo3"></p>
+    <p id ="demo4"></p>
+    <script>
+
+        //star pattern upper left triangle
+
+        let n = 5;
+        for (let i = 0; i <= n; i++)
+        {
+        
+        let str = "* ";
+        console.log(str.repeat(i));
+        
+        }
+        console.log(" ");
+        
+        //star pattern upper right triangle
+        
+        
+        let p = 5;
+        
+        for(let j = 1; j <= p; j++)
+        {
+            // console.log(j)
+            let str = "* "
+            let space ="  ";
+            
+            console.log(space.repeat(p-j) +str.repeat(j));
+        }
+           
+        console.log(" ");
+
+        // star patter lower left
+
+        let r = 5;
+        for(let q=5; q>=0; q--)
+        {
+            // console.log(q);
+            let str = "* ";
+            // if(q===0){continue;}
+            console.log(str.repeat(q));
+
+        }
+
+
+        // star pattern lower right
+
+        let b = 5;
+        for(a=5; a>=0; a--)
+        {
+            let str = " *";
+            let space = "  ";
+            // if(a==0){break;}
+            console.log(space.repeat(b-a) + str.repeat(a));
+        }
+
+        //unorganized star pattern..............................................
+
+            
+            for(x=0; x<=5; x++)
+            {
+                let str = "*";
+                let space = "  ";   //not in use
+
+                if(x==1)
+                {
+                    console.log(str.repeat(x));
+                }
+                else if (x==2)
+                {
+                    console.log("   " + str.repeat(x));
+                }
+                else if (x==3)
+                {
+                    console.log(str.repeat(x));
+                }
+                else if (x==4)
+                {
+                    console.log(" " + str.repeat(x));
+                }
+                else{
+                    console.log(str.repeat(x));
+                }
+            }
+            
+            
+    </script>
+</body>
+</html>
