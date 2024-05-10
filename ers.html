@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Employee Data form</title>
+        <meta charset="UTF-8">
+        <style>
+        label{
+            width: 140px;
+            display: inline-block;
+            text-align:right;
+            
+        }
+        .mydiv{
+            text-align: left;
+        }
+        
+        body{
+            background-color: rgb(209, 222, 235);
+        }
+        </style>
+    </head>
+    <body>
+        <form>
+       <h1 class="demo">Employee Registration Form</h1><br><br>
+        <fieldset>
+        <legend>Employee Details</legend>
+        <label for="Employee ID">Employee ID</label>
+        <input type="text" placeholder="Enter ID here"><br><br>
+
+        <label for="Employee Email">Employee Email</label>
+        <input type="email" placeholder="@p99soft.com"><br><br>
+
+        <label for="FirstName">First Name</label>
+        <input type="text"><br><br>
+
+        <label for="LastName">Last Name</label>
+        <input type="text"><br><br>
+
+        <label for="Dept">Department Number</label>
+        <input type="number"><br><br>
+
+        <label for="Salary">Salary</label>
+        <input type="text" maxlength="8" ><br><br>
+
+        <label for="contractor">Contractor</label>
+        <input type="checkbox">Yes<br><br>
+
+       <div class="mydiv">
+        <button id ="button" onclick="myfunction()">Submit</button>
+        <button id="click" onclick="myfunction1()">Clear Form</button>
+        </div>
+       </fieldset>
+        
+        </form>
+        <script src="ers_dom.js">
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document config</title>
+</head>
+<body>
+    <p id="p1">Hello confusion</p>
+    <p class="config">class confusion</p>
+    <p class="config">class confusion 1</p>
+    <script>
+        document.getElementById("p1").innerHTML = "Changed Hello Confusion";
+
+        let x =document.getElementsByClassName("config") = "Changed class confusion";
+        x[0].innerHTML="New confusion";
+
+    </script>
+</body>
+</html>
