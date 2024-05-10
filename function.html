@@ -6,6 +6,9 @@
     <title>Functions in javascript</title>
 </head>
 <body>
+    <p id="demo">
+        
+    </p>
     <script>
 
         function hello()
@@ -33,13 +36,25 @@
         // console.log("Average of b and c is:"(1+(b + c)/2));      //mistaken here
         // console.log("Average of a and c is:" (1 +(a + c)/2));
 
-        function demo()
-        {
-            console.log("Will it print without return type in the function");
-        }
+        // function demo(x)
+        // {
+        //     // console.log("Will it print without return type in the function");
+        //     x;
 
-        demo();       // demo invoked
-        console.log("Yes it got printed!");
+        // }
+
+        // // demo("10");       // demo invoked
+        // console.log("Yes it got printed!");
+        // console.log(demo("10"));
+
+        function ureturn(x) {
+        //  document.getElementById("demo").innerHTML = x;
+        return console.log(x);
+        
+         
+        }
+        ureturn("10");
+        ureturn("10");
 
 
     </script>

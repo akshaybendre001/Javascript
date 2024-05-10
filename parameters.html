@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parameters</title>
+</head>
+<body>
+    <p id="demo">Setting default value for parameters:</p>
+    <p id="demo1">Setting default value for parameters:</p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        //undefined parameters
+
+        function myfunction(x, y)
+        {
+            if(y === undefined){                             // setting default value for parameters
+                y = 2;
+            }
+            return x * y;                                   // will return the value of x * y in myfunction(x,y)
+               }
+        document.getElementById("demo").innerHTML = myfunction(4); //function is invoked here..
+
+    //-----------------------------------------------------------------------------------------------------------------
+
+        function function15(x, y=10)
+        {
+            return x + y;
+        }
+        document.getElementById("demo1").innerHTML = function15(5);
+
+    //-----------------------------------------------------------------------------------------------------------------
+
+    // function to know for undefined values
+
+    function nodefine(a, b){
+        return a + b;
+    }
+
+    document.getElementById("demo2").innerHTML = nodefine(5);   // will return a NaN 
+
+    //------------------------------------------------------------------------------------------------------------------
+
+    //function to sum all input values
+
+    function addArry(arr){
+
+
+        var sum = 0;
+        for(let x of arr){
+
+            sum = sum + x
+            // console.log(x)
+        //  console.log(sum)
+        }
+                                                            //block scope and global scope values should be carefully used
+        console.log(sum)
+       document.getElementById("demo3").innerHTML = sum;
+    }
+    
+    let array = [100,200,300,400,200];
+    
+    addArry(array);
+    //-------------------------------------------------------------------------------------------------------------------
+
+    // function for addition of input values using rest parameters
+
+    function addition(...args){   
+        console.log(args);              //rest parameters helps the function to convert parameters in array
+        let sum = 0;
+        for(let i=0; i< args.length; i++)
+        {
+           sum +=args[i];
+
+        }
+        return console.log(sum);
+    }
+    addition(100, 200, 300, 400, 500);  //function is invoked or called here 
+
+    //-------------------------------------------------------------------------------------------------------------------
+
+    //function for string values
+
+    function names(...args1){
+        let sum = "";              //empty sum declaration for storing values data type=undefined
+        console.log(typeof(sum));  //checked for type 
+        let sum1 =null;
+        console.log(typeof(sum1));  // null is an object
+        for(i=0; i<args1.length; i++)
+        {
+            sum += " " + args1[i];
+        }
+        return console.log(sum);
+    }
+    names("Akshay","Nikhil","Atharva","Tejas");  //function invoked
+
+
+    </script>
+</body>
+</html>

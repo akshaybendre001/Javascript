@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLOSURES</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      //function for closure property
+      let sum = 10;
+      function sub(...args) {
+        // console.log(args)
+        function sub2(...arg) {
+          // console.log(arg)
+          for (let x of args) {
+            console.log(x);
+            sum -= x;
+          }
+
+          return sum;
+        }
+
+        return sub2();
+      }
+      document.getElementById("demo").innerHTML = sub(10, 9, 8, 7, 6);
+      document.writeln("subject1" + "<br>");
+      document.write("subject2");
+
+      //----------------------------------------------------------------------------------------------------
+    </script>
+  </body>
+</html>
