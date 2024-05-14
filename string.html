@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <p id="Demo1"></p>
+    <p id="Demo2"></p>
+    <p id="Demo3"></p>
+    <p id="Demo4"></p>
+    <p id="Demo5"></p>
+    <p id="Demo6"></p>
+    <p id ="Demo7"></p>
+    <p id ="Demo8"></p>
+    <script>
+        let name = "RoyalChallengersBangalore";
+        let team = " team."
+        let alphabet = "                                                               basket ball              ";
+        let text = "a, b, c, d";
+
+        document.getElementById("Demo1").innerHTML= (name.slice(0,6));  //slice will make it to the index..6th index will not be considered
+
+        document.write(name.slice(5)+"<br>");  //single argument by slice
+
+        document.write(name.slice(-5));
+
+        document.getElementById("Demo2").innerHTML= (name.toUpperCase());
+
+        document.getElementById("Demo3").innerHTML = (name.toLowerCase());
+
+        document.getElementById("Demo4").innerHTML = (name.replace("Bangalore","Mumbai"));
+
+        document.getElementById("Demo5").innerHTML = (name.concat(" is an ipl"+ team));
+
+        document.getElementById("Demo6").innerHTML = (alphabet.trim());
+
+        document.getElementById("Demo7").innerHTML = alphabet.trimStart();
+
+        document.getElementById("Demo8").innerHTML = alphabet.trimEnd();
+
+        document.write(text.split("d"));
+        
+        
+        function myfunction()
+        {
+         let text = "Please visit microsoft and microsoft. microsoft is one of the most leading company in it. microsoft has built many projects";
+           
+         console.log(text.replace("microsoft", "w3schools"));                 //replace and All
+        }
+        myfunction();
+
+
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duplicate characters in the string</title>
+</head>
+<body>
+    <script>
+
+        
+        let strg = "";
+        function Duplicate(str)
+        {
+            let empty = {};                   //defines empty object
+            let collection = "";              // defines empty string
+            
+            for(let char of str){           // for of loop to iterate over every element
+                if(empty[char])            // to check if the character has occured before
+                {
+                    collection += char;    // goes to the next character
+                }
+                else{
+                    empty[char] = true;    // if the character is not seen before it will go to the block
+                }
+            }
+            return collection;
+        }
+        
+        let duplicate_char = Duplicate(strg);   //initialized new variable to function call i.e Duplicate(strgs) it will hold the duplicate characters string
+        document.write("Duplicate characters in the string " + strg + " are:" + duplicate_char);
+        // Duplicate(strg);
+
+
+//         function findDuplicates(str) {
+//     let duplicates = "";
+//     let seen = {};
+
+//     for (let char of str) {
+//         if (seen[char]) {
+//             duplicates += char;
+//         } else {
+//             seen[char] = true;
+//         }
+//     }
+
+//     return duplicates;
+// }
+
+// let strg = "Akshay";
+// let duplicateChars = findDuplicates(strg);
+// document.write("Duplicate characters in the string " + strg + " are: " + duplicateChars);
+// --------------------------------------------------------------------------------------------------------------------------------
+
+//         function printDuplicates(str) {
+//     let seen = {};
+
+//     for (let char of str) {
+//         if (seen[char]) {
+//             console.log(char);
+//         } else {
+//             seen[char] = true;
+//         }
+//     }
+// }
+
+// let inputString = "hello world";
+// console.log("Duplicate characters in '" + inputString + "':");
+// printDuplicates(inputString);
+
+    </script>
+</body>
+</html>
