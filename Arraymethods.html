@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        let array = [1, 2, 3, 4, 5, 6, 7 ,8, 9, 10];
+
+        let array1=[12345678910,37653754586,3734527588];
+
+        let array2 = ["Developer","Tester", "Debugger", "Manager", "Team-Lead"];
+        array2.push("Client");
+
+        console.log(array.length);
+        console.log(array.toString());
+        console.log(array.at(5));
+        console.log(array.join("="));
+        console.log(array1.join("      "));
+        console.log(typeof(array1.join("     ")));          //array1.join() method will convert array elements into a string
+
+        console.log(array1.pop());              //pop method will only display the last element in the array..
+
+        console.log(array.pop());
+
+        console.log(array2.push());
+        console.log(array2.push("CEO"));
+        document.write(array2.push() + "<br>");
+        document.write(array2.push("CEO" )+ "<br>");     //pushh method returns the new array length
+        document.write(array2.pop());
+        document.getElementById("demo").innerHTML = array2;
+
+        const fruits=["Banana", "orange","apple", "mango"];
+        fruits.push("kiwi");
+        console.log(fruits);
+
+        let text="abcdefg";
+        text.split("d");        //string is immutable
+        console.log(text);
+
+        // const arr =["agjhs","sgffdgh","sgff"];
+
+        // console.log(arr.push("aaaaa"));               //never add push in the printing statements
+        // console.log(arr);
+      //--------------------------------------------------------------------------------------------------------------------------------     
+       const cars =["bmw","audi","mg","mustang"];
+       const bikes =["splendor","R15","Raider"];
+       cars.shift();  //removes first element of an array & cannot pass arguements
+       console.log(cars);
+       x=cars.unshift("mahindra");  //unshift gives length of the new array 
+       console.log(x);
+
+       y = cars.concat(bikes);
+       console.log(y);
+
+       //------------------------------------------------------------------------------------------------------------------------------------
+
+       const employees=["e1","a2","c3","e4","z5"];
+       const num=[22,1,23,41,15];
+
+       console.log(employees.indexOf(4)); //returns -1 if the element is not found
+       console.log(employees.lastIndexOf("e4"));
+
+       console.log(employees.sort());  //sort method will sort all the elements in alphabetical order
+       console.log(num.sort());
+
+       console.log(employees.reverse()); //reverses the elements in an array
+
+    //    let numm=[10,7,15,13,20];
+    //    let new2 =(numm.sort());   //sorting produces some error while comparing so we provide some function to it
+    //    console.log(new2);
+    //---------------------------------------------------------------------------------------------------------------------------------------
+
+    const veggies = ["fenugreek","tomato","lemon","brinjal"];
+
+    // console.log(veggies.splice(1,2));
+    const mix=veggies.splice(1,2,"mango","apple");
+        console.log(veggies);
+
+
+    </script>
+</body>
+</html>
