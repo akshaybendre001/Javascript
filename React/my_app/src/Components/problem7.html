@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         There are two arrays with individual values. Write a JavaScript program to compute the sum of each individual index value in the given array.
+// Sample array :
+
+
+let array1 = [1,0,2,3,4];
+let array2 = [3,5,6,7,8,13];
+// Expected Output :
+// [4, 5, 8, 10, 12, 13]
+
+// Test 2: 
+// array1 = [1,0,2,-3,-4];
+// array2 = [3,5,6,7,-8];
+// Expected Output :
+// [4, 5, 8, 4,-12]
+// function addition()
+// {
+    let expected =[];
+    function addition(){
+    for(i=0; i<=array1.length; i++) 
+    {
+        for(j=0; j<=array2.length; j++)
+        {
+            if(i===j){
+                expected.push(array1[i] +array2[j]);
+            }
+            
+    }
+}
+console.log(expected);
+    }
+addition();
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+let aray1 = [1,0,2,3,4];
+let aray2 = [3,5,6,7,8,13];
+
+function sum(aray1, aray2)
+{
+    let box = [];
+    // let valueof2 =[]
+    for(i=0; i<=aray1.length; i++)
+    {
+        let val1 = i < aray1.length ? aray1[i] : 0;
+    
+        
+        let val2 = i < aray2.length ? aray2[i] : 0;
+        
+        let sumed = val1 + val2;
+
+        
+        // box.push();
+        
+        
+box.push(sumed);
+        // console.log(val1);
+}
+return console.log(box);
+}
+
+sum(aray1, aray2);
+
+// function add(){
+//     let expect = [];
+//     for(let x of array1){
+//         let s1 = x;
+//         console.log(s1);
+//     } 
+    
+//     for(let y of array2)
+//        {
+//         let s2=y;
+//         console.log(s2);
+//     }
+
+//     if(i===j){
+//         sum = array1[i]+array2[j];
+//         console.log(sum);
+//     }
+//     arr = array1.concat(array2);   
+//     console.log(arr); 
+    
+//     // console.log(arr.map((a,b)=>{return a+b}));
+//     // let sum = array1[s1] + array2[s2];
+//     // console.log(sum);
+
+// }
+// add();
+    </script>
+</body>
+</html>
