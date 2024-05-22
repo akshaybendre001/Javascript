@@ -3,6 +3,9 @@ import './App.css';
 import App1 from './Function_Components/App1';
 import MyProvider from './Function_Components/Context1/MyProvider';
 import Effect from './Function_Components/Effect';
+import Ref1 from './Function_Components/Ref1';
+import Button from './Function_Components/Button';
+import Callback from './Function_Components/Callback';
 // import MyComponent from './Function_Components/Context1/MyComponent';
 
 function App() {
@@ -24,9 +27,12 @@ function App() {
       </header> */}
       
 
-      <App1/> 
+      {/* <App1/> 
       <Effect/>
-       <MyProvider/> 
+       <MyProvider/>  */}
+       <Ref1/>
+       <Button/>
+       <Callback/>
       {/* <MyComponent/> */}
     </div>
   );
