@@ -3,11 +3,14 @@ import './App.css';
 import First from './Components/First';
 import Welcome from './Components/Welcome';
 import Second from './Components/Second';
+import Api_Errors from './Components/Api_Errors';
+import Api_Request from './Components/Api_Request';
+import Api_Request1 from './Components/Api_Request1';
 
 function App() {
   return (
     <>
-    <h1>Hii Welcome to world of React</h1>
+    <h1><center>Hii Welcome to world of React</center></h1>
     <div className="App">
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -23,9 +26,12 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Welcome/> 
+      {/* <Welcome/> 
       <First/>
-      <Second/>
+      <Second/> */}
+      <Api_Errors/>
+      {/* <Api_Request/> */}
+      <Api_Request1/>
     </div>
     </>
   );
