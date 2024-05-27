@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Methods</title>
+</head>
+<body>
+    <script>
+        const person = {
+            firstname: "Akshay",
+            Lastname: "Bendre",
+            age:23,
+            status: "trainee",
+            fullname: ()=>
+        {
+            return console.log(this.firstname +" "+ this.Lastname);
+        }
+    
+        }
+        person.fullname();
+        const keys = Object.keys(person);  //Object.keys() used to print properties of an object
+        console.log(keys);
+
+        const values = Object.values(person); //prints values of an object
+        console.log(values);
+
+        
+        console.log(Object.entries(person));// prints keys and values both of an object
+    
+        //-------------------------------------------------------------------------------------------------------------------
+
+        const Cars ={
+            type:"SUV",
+            color:"Red",
+            price: "Ten lakhs"
+        }
+
+        const Company = {
+            Name: "Tata",
+            Address: "Pune"
+        }
+
+        // console.log(Object.freeze(Cars)); // cannot modify object
+        let details = Object.assign(Cars, Company);  //Object.assign() method merges the key-values of an object
+        console.log(details);
+
+        
+    </script>
+</body>
+</html>
