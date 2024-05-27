@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+<body>
+    <div>
+        <p id="Demo"></p>
+        <h1>This is an Example of XMLHttpRequest!!</h1>
+        <button type="button" onClick="loadDoc()">Click me!</button>
+
+
+    </div>
+    <script>
+        function loadDoc()
+        {
+            const xhttp = new XMLHttpRequest();
+
+            xhttp.onload = function()
+            {
+                document.getElementById("Demo").innerHTML  = this.responseText;
+            }
+
+            xhttp.open("GET", "ajaxinfo.txt");
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>

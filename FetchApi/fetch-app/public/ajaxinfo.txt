@@ -1,0 +1,7 @@
+Welcome To AJAX!! '\n'
+
+This is an Example of AJAX "\n"
+
+Ajax is Asynchronous Javascript And XML "\n"
+
+Asynchronous means without refreshing the page changes can be done!!
