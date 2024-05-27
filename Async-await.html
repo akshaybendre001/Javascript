@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async and Await</title>
+</head>
+<body>
+    <script>
+
+     function Data() 
+    {
+        return new Promise((resolve, reject) => 
+        {
+            setTimeout(() => 
+            {
+                resolve("Data function completed!");
+            }, 2000); 
+        });
+    }
+
+     async function Task() 
+    {
+        console.log("Task 1 done");
+        console.log("Task 2 done");
+
+        const data = await Data();        // Waits for the Data function to complete
+        console.log(data); 
+        console.log("Task 3");
+        console.log("Task 4");
+    }
+
+    
+    Task();
+
+    </script>
+</body>
+</html>
