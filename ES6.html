@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Methods</title>
+  </head>
+  <body>
+    <script>
+      //es6 class------------------------------------------------------------------------------------------------------------
+
+      class Car {
+        //name of the class should start with a capital letter i.e standard naming convention
+        constructor(name) {
+          // constructor name
+          this.brand = name; //property name
+        }
+      }
+      const mycar = new Car("Mustang  <br>"); // object created here        // constructor function is called automatically when an object is initialized
+      document.write(mycar.brand); // print statement
+
+      //arrow function-----------------------------------------------------------------------------------------------------
+
+      function Hello() {
+        //eg 1
+        return "Hello World <br>";
+      }
+      document.write(Hello());
+
+      Hello = () =>
+        //eg 2
+        {
+          return "Arrow function <br>";
+        };
+      document.write(Hello());
+
+      Hello = () => "Hello World! <br>"; // eg 3
+      document.write(Hello());
+
+      //array methods () => .maps() -------------------------------------------------------------------------------------------
+
+      myarray = ["Apple", "Mango", "Banana", "Strawberry"]; //eg 1
+
+      mylist = myarray.map((item) => item);
+      document.write(myarray + "<br>");
+
+      numbers = [1, 2, 3, 4, 5]; //eg 2
+      new_numbers = numbers.map((num) => num * 2);
+      document.write(new_numbers + "<br>");
+
+      const fruits = ["Strawberry", "Banana", "Apple", "Mango", "cherry"]; //eg 3
+      const mix = fruits.map((fruit) => fruit.toUpperCase());
+      document.write(mix + "<br>");
+      const mix1 = fruits.map((fruit) => fruit.length);
+      document.write(mix1 + "<br>");
+      
+
+      const nums = [1, 2, 3, 4, 5]; //eg 4
+      const squares = nums.map((num) => num ** 2);
+      document.write(squares + "<br>");
+
+      const squares1 = [1, 2, 3, 4, 5]; //eg 5
+      const sq = squares1.map((nums) => nums ** nums);
+      document.write(sq + "<br>");
+
+      //Destructuring------------------------------------------------------------------------------------------------------------
+
+      let Cars = {
+        type: "SUV",
+        color: "Red",
+        engine: "hybrid",
+        price: "high",
+        milage: "Ten_kmpl",
+      };
+      myvehicle(Cars);
+
+      function myvehicle({ type, color, engine, price, milage }) {
+       let message =
+          "My Car is of color" +
+          " " +
+          color +
+          " " +
+          "type" +
+          " " +
+          type +
+          " " +
+          "engine" +
+          " " +
+          engine +
+          "price" +
+          " " +
+          price +
+          "milage" +
+          " " +
+          milage;
+
+        document.write(message);
+      }
+    </script>
+  </body>
+</html>
