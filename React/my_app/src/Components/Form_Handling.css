@@ -1,0 +1,17 @@
+
+body{
+    background-color: rgb(211, 207, 233);
+}
+
+
+
+label{
+    width:140px;
+    display:inline-block;
+    text-align: right;
+}
+
+button{
+    background-color:rgb(153, 235, 153);
+    
+}
