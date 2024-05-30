@@ -4,7 +4,7 @@ function Api_Request()
 {
     const[pics, setPics] = useState([]);
 
-    useEffect(()=>{
+    
     function abc(){
        fetch("https://jsonplaceholder.typicode.com/photos",
         
@@ -16,8 +16,7 @@ function Api_Request()
     {
         console.log("Error has been Handled", error)
     })
-}}
-)
+}
 
     return(
         <>
