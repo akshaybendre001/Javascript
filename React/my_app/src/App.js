@@ -6,6 +6,12 @@ import Second from './Components/Second';
 import Api_Errors from './Components/Api_Errors';
 import Api_Request from './Components/Api_Request';
 import Api_Request1 from './Components/Api_Request1';
+import Ternary from './Components/Ternary';
+import Goal from './Components/Goal';
+import Lists from './Components/Lists';
+import Conditional from './Components/Conditional';
+import Key from './Components/Key';
+
 
 function App() {
   return (
@@ -29,9 +35,14 @@ function App() {
       {/* <Welcome/> 
       <First/>
       <Second/> */}
-      <Api_Errors/>
+      {/* <Api_Errors/> */}
       {/* <Api_Request/> */}
-      <Api_Request1/>
+      {/* <Api_Request1/> */}
+      <Ternary/>
+      {/* <Goal/> */}
+      <Lists/>
+      <Conditional/>
+      <Key/>
     </div>
     </>
   );

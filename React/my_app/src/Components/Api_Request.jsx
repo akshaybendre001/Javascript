@@ -4,8 +4,8 @@ function Api_Request()
 {
     const[pics, setPics] = useState([]);
 
-    useEffect(()=>{
-    function abc(){
+    
+    const  abc = ()=>{
        fetch("https://jsonplaceholder.typicode.com/photos",
         
     ).then(response => response.json())
@@ -15,14 +15,13 @@ function Api_Request()
     .catch(error=>
     {
         console.log("Error has been Handled", error)
-    })
-}}
-)
+    
+})}
 
     return(
         <>
         <h1>The Api Request acts like this</h1>
-        <button onClick={abc()}>Click Me!</button>
+        <button onClick={abc}>Click Me!</button>
         <ul>
                 {pics.map(photo => (
                     <li key={photo.id}>
